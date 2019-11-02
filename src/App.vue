@@ -206,6 +206,9 @@ h4 {
             margin-block-start: 0;
             padding: 0 1rem;
         }
+        ul {
+            margin-block-start: 0;
+        }
         a {
             color: inherit;
             text-decoration: underline;
