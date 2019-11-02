@@ -49,7 +49,7 @@
         </div>
         <br/><br/>
         <div class="profile-balloon">
-            <img class="profile-balloon-chara" src="/img/Nia-SD-profile.png"/>
+            <img class="profile-balloon-chara" src="/img/Nia-sd-profile.png"/>
             <div class="profile-balloon-container">
                 <div class="profile-balloon-content">
                     <p>こんにちはー！ 私は生まれも育ちも湘南のエンジニアです！ </p>
