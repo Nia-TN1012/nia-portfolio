@@ -160,7 +160,10 @@ h4 {
         & a {
             display: block;
             padding: 0.5em;
-            color: white;
+            color: inherit;
+            @media ( prefers-color-scheme: $pcs ) {
+                color: white;
+            }
             text-decoration: none;
         }
     }
