@@ -56,6 +56,7 @@ export default class Skills extends Vue {
         new SkillItem( "TypeScript", 1, 3 ),
         new SkillItem( "Python", 1, 2 ),
         new SkillItem( "Ruby", 1, 2 ),
+        new SkillItem( "GO言語", 1, 4 ),
     ]
     frameworks: Array<SkillItem> = [
         new SkillItem( ".NET Framework / Core", 8, 5 ),
@@ -65,6 +66,7 @@ export default class Skills extends Vue {
         new SkillItem( "FuelPHP", 1, 1 ),
         new SkillItem( "Vue.js", 1, 3 ),
         new SkillItem( "Angular.js", 1, 1 ),
+        new SkillItem( "gRPC", 1, 4 ),
     ]
     infras: Array<SkillItem> = [
         new SkillItem( "Apache", 6, 4 ),

@@ -54,7 +54,7 @@ export default class Works extends Vue {
         new WorkItem(
             "ゲームの運用・機能開発（ブラウザゲーム・ネイティブアプリ）",
             "サーバーサイド・クライアントアプリでの開発・改修、DBテーブルの設計・チューニング、インフラの運用",
-            ["C#", ".NET", "Unity", "PHP", "MySQL", "Memcached", "Git", "Jenkins", "Zabbix", "Docker", "Cent OS"],
+            ["C#", ".NET", "Unity", "PHP", "MySQL", "Memcached", "Git", "Jenkins", "Zabbix", "Docker", "CentOS"],
             ["定期ガチャの開発・改修", "ゲーム画面のUI改修", "称号機能の開発", "ログデータ用テーブルのチューニング、古いログデータの削除", "サーバー監視設定のチューニング", "一部サーバーのスペックのスケールアウト", "お問い合わせ内容の調査", "管理画面の機能拡張"]
         ),
         new WorkItem(
@@ -66,9 +66,15 @@ export default class Works extends Vue {
         new WorkItem(
             "ゲームの運用・機能開発（ブラウザゲーム）",
             "サーバーサイド・フロントエンドでの開発・改修、DBテーブルの設計、インフラの構成・運用、ゲームの移管",
-            ["PHP", "MySQL", "Memcached", "Git", "Jenkins", "Docker", "Cent OS"],
+            ["PHP", "MySQL", "Memcached", "Git", "Jenkins", "Docker", "CentOS"],
             ["ゲームの移管", "定期ガチャの開発・改修", "開発環境を新規作成", "Docker composeを改修し、マルチ仮想ホストに対応化", "お問い合わせ内容の調査", "管理画面の機能拡張"]
-        )
+        ),
+      new WorkItem(
+          "ブロックチェーンの新規開発・運用（ブラウザゲーム）",
+          "サーバーサイド・フロントエンドでの開発、DBテーブルの設計、インフラの設計・構築",
+          ["GO言語", "TypeScript", "MySQL", "Git", "Docker", "Jenkins", "Zabbix", "Redash", "AWS", "CentOS"],
+          ["サーバーサイド及びクライアントアプリの基盤部分を開発", "シナリオエンジンの開発", "PvPバトルの開発", "etc..."]
+      )
     ]
 
     worksInTools: Array<WorkItem> = [
