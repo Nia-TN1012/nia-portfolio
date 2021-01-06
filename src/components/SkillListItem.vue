@@ -1,7 +1,6 @@
 <template>
     <tr>
         <td>{{ name }}</td>
-        <td>{{ expYears }}年</td>
         <td>{{ skillGradeStar }}</td>
     </tr>
 </template>
@@ -11,12 +10,10 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 export class SkillItem {
     name: string
-    expYears: number
     skillGrade: number
 
-    constructor( name: string, expYears: number, skillGrade: number ) {
+    constructor( name: string, skillGrade: number ) {
         this.name = name
-        this.expYears = expYears
         this.skillGrade = skillGrade
     }
 }

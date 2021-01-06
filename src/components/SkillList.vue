@@ -3,14 +3,12 @@
         <thead>
             <tr>
                 <th>{{ name }}</th>
-                <th>経験年数</th>
                 <th>スキル</th>
             </tr>
         </thead>
         <tbody>
             <skill-list-item v-for="( skillItem, index ) in skillItems" :key="index"
                             :name="skillItem.name"
-                            :exp-years="skillItem.expYears"
                             :skill-grade="skillItem.skillGrade">
             </skill-list-item>
         </tbody>

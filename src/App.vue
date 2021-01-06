@@ -17,7 +17,7 @@
 
         <hr/>
         <footer>
-			&copy;2020 Nia T.N. Atelier
+			&copy;2021 Nia T.N.
 		</footer>
     </div>
 </template>
