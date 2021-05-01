@@ -108,7 +108,7 @@ export default class Artifacts extends Vue {
             "portfolio",
             "2019/10",
             "Webアプリ",
-            ["HTML5", "TypeScript", "Vue.js", "Sass"],
+            ["HTML5", "TypeScript", "Vue.js", "Sass", "Vercel"],
             undefined,
             ["https://github.com/Nia-TN1012/Nia-Portfolio"],
             [
