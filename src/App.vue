@@ -17,7 +17,7 @@
 
         <hr/>
         <footer>
-			&copy;2021 Nia T.N.
+			&copy;2021-2022 Nia's Atelier Techno Lab
 		</footer>
     </div>
 </template>
