@@ -60,6 +60,7 @@ export default class Skills extends Vue {
         new SkillItem( "Java", 1 ),
         new SkillItem( "Swift", 1 ),
         new SkillItem( "Objective-C", 1 ),
+        new SkillItem( "Solidity", 2 ),
     ]
     frameworks: Array<SkillItem> = [
         new SkillItem( ".NET Framework / Core", 5 ),
@@ -68,6 +69,7 @@ export default class Skills extends Vue {
         new SkillItem( "Laravel", 2 ),
         new SkillItem( "FuelPHP", 1 ),
         new SkillItem( "Vue.js", 3 ),
+        new SkillItem( "React", 2 ),
         new SkillItem( "Angular", 1 ),
         new SkillItem( "gRPC", 4 ),
         new SkillItem( "Rails", 2 ),
@@ -98,6 +100,7 @@ export default class Skills extends Vue {
         new SkillItem( "Webpack", 3 ),
         new SkillItem( "CLIP STUDIO", 4 ),
         new SkillItem( "Photoshop", 1 ),
+        new SkillItem( "Hardhat", 2 ),
     ]
 }
 </script>
