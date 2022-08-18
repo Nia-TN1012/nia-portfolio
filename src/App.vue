@@ -17,7 +17,7 @@
 
         <hr/>
         <footer>
-			&copy;2021-2022 Nia's Atelier Techno Lab
+			&copy;2022 Tomonaka Techno-Lab.
 		</footer>
     </div>
 </template>
@@ -101,7 +101,7 @@ h4 {
         li {
             display: block;
             width: 16%;
-            
+
             &:hover {
                 background-color: #ddd;
                 @media ( prefers-color-scheme: $pcs ) {
@@ -181,7 +181,7 @@ h4 {
 .cardbox {
     margin: 5px;
     padding: 5px;
-    
+
     background-color: #fff;
     border: 1px solid #888;
     @media ( prefers-color-scheme: $pcs ) {
