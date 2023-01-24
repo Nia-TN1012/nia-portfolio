@@ -17,7 +17,7 @@
 
         <hr/>
         <footer>
-			&copy;2022 Tomonaka Techno-Lab.
+			&copy;2023 Nia T.N. Tech Lab.
 		</footer>
     </div>
 </template>
