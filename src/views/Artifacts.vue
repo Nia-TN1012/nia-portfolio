@@ -48,21 +48,6 @@ import { ArtifactItem } from '@/components/ArtifactListItem.vue';
 export default class Artifacts extends Vue {
     artifactsInApp: Array<ArtifactItem> = [
         new ArtifactItem(
-            "すぱこみっく！ ユニバース",
-            "spacomic",
-            "2016/10",
-            "UWPアプリ",
-            ["C#", ".NET Core", "Windows 10 SDK"],
-            ["https://www.microsoft.com/store/apps/9nblggh42km5"],
-            ["https://github.com/Nia-TN1012/SpacomicUniverse"],
-            [
-                "2016年9月に行ったインターンで学んだことを復習するため、前々から興味のあったWindowsストアアプリの開発をしました。",
-                "すぱこーRSSフィードを取得し、一覧表示します。（レスポンシブ対応済み）",
-                "RSSフィード一覧から項目を選択すると、漫画画像を表示するページを開きます。拡大縮小表示ができる他、FlipViewを使用して前後の話に切り替えられます。",
-                "取得したRSSフィードをローカルにキャッシュし、次回以降の読み込みを高速化しています。また、アプリ起動時にWeb常に最新話があれば、トースト通知が来ます。"
-            ]
-        ),
-        new ArtifactItem(
             "アイコンフォントこれくしょん",
             "iconfont-collection",
             "2016/10",
@@ -109,7 +94,7 @@ export default class Artifacts extends Vue {
             "2019/10",
             "Webアプリ",
             ["HTML5", "TypeScript", "Vue.js", "Sass", "Vercel"],
-            undefined,
+            ["https://nia-tn1012.com/"],
             ["https://github.com/Nia-TN1012/Nia-Portfolio"],
             [
                 "学生時代からやったこと、作ってみたことを整理するのと、フロントエンドの技術をさらに探求するために、ポートフォリオを作成しました。",
@@ -117,7 +102,22 @@ export default class Artifacts extends Vue {
                 "CSSの設定で、使用しているOSのダークモードと連動させています。（画像は、ダークモードの時です。）",
                 "2021/05より、ホスティング環境をVercelに変更しました。"
             ]
-        )
+        ),
+      new ArtifactItem(
+          "すぱこみっく！ ユニバース",
+          "spacomic",
+          "2016/10",
+          "UWPアプリ",
+          ["C#", ".NET Core", "Windows 10 SDK"],
+          undefined,
+          ["https://github.com/Nia-TN1012/SpacomicUniverse"],
+          [
+            "2016年9月に行ったインターンで学んだことを復習するため、前々から興味のあったWindowsストアアプリの開発をしました。",
+            "すぱこーRSSフィードを取得し、一覧表示します。（レスポンシブ対応済み）",
+            "RSSフィード一覧から項目を選択すると、漫画画像を表示するページを開きます。拡大縮小表示ができる他、FlipViewを使用して前後の話に切り替えられます。",
+            "取得したRSSフィードをローカルにキャッシュし、次回以降の読み込みを高速化しています。また、アプリ起動時にWeb常に最新話があれば、トースト通知が来ます。"
+          ]
+      ),
     ]
 
     artifactsInLib: Array<ArtifactItem> = [
@@ -146,19 +146,6 @@ export default class Artifacts extends Vue {
             ]
         ),
         new ArtifactItem(
-            "すぱーダ（SPADA）",
-            "spada",
-            "2015/12",
-            ".NET ライブラリ",
-            ["C#", ".NET Framework", ".NET Core", "Xamarin"],
-            ["https://www.nuget.org/packages/Chronoir_net.SPADA/", "https://www.nuget.org/packages/Chronoir_net.XSPADA/", "https://www.nuget.org/packages/Chronoir_net.UniSPADA/", "https://www.nuget.org/packages/Chronoir_net.SPADAS/"],
-            ["https://github.com/Nia-TN1012/SPADA"],
-            [
-                "プログラミング生放送主催の勉強会のLTネタで、LINQ to XMLを使ってすぱこーRSSフィードからデータを取得するプログラムを作っていたのですが、ちょうど.NETクラスライブラリとNuGetパッケージのパブリッシングの勉強をしており、せっかくなのでライブラリを作成してNuGetパッケージとしてリリースしました。",
-                "UWP用の「ユニすぱーダ（UniSPADA）」は、前述の「すぱこみっく！ ユニバース」で使用しています。"
-            ]
-        ),
-        new ArtifactItem(
             "Xamarin向けのAndroid Wearのウォッチフェイス用カスタムプロジェクトテンプレート",
             "watchface",
             "2017/01",
@@ -183,6 +170,19 @@ export default class Artifacts extends Vue {
                 "さらに、Xamarin.Formsで使用しているコードの共通化を参考にして、スマートフォン用とウェアラブル用のハイブリッドで開発できるプロジェクトテンプレートも作りました。"
             ]
         ),
+      new ArtifactItem(
+          "すぱーダ（SPADA）",
+          "spada",
+          "2015/12",
+          ".NET ライブラリ",
+          ["C#", ".NET Framework", ".NET Core", "Xamarin"],
+          undefined,
+          ["https://github.com/Nia-TN1012/SPADA"],
+          [
+            "プログラミング生放送主催の勉強会のLTネタで、LINQ to XMLを使ってすぱこーRSSフィードからデータを取得するプログラムを作っていたのですが、ちょうど.NETクラスライブラリとNuGetパッケージのパブリッシングの勉強をしており、せっかくなのでライブラリを作成してNuGetパッケージとしてリリースしました。",
+            "UWP用の「ユニすぱーダ（UniSPADA）」は、前述の「すぱこみっく！ ユニバース」で使用しています。"
+          ]
+      ),
     ]
 }
 </script>

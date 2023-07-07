@@ -69,12 +69,12 @@ export default class Works extends Vue {
             ["PHP", "MySQL", "Memcached", "Git", "Jenkins", "Docker", "CentOS"],
             ["ゲームの移管", "定期ガチャの開発・改修", "開発環境を新規作成", "Docker composeを改修し、マルチ仮想ホストに対応化", "お問い合わせ内容の調査", "管理画面の機能拡張"]
         ),
-      new WorkItem(
-          "ブロックチェーンの新規開発・運用（ブラウザゲーム）",
-          "サーバーサイド・フロントエンドでの開発、DBテーブルの設計、インフラの設計・構築",
-          ["GO言語", "TypeScript", "MySQL", "Git", "Docker", "Jenkins", "Zabbix", "Redash", "AWS", "CentOS"],
-          ["サーバーサイド及びクライアントアプリの基盤部分を開発", "シナリオエンジンの開発", "PvPバトルの開発", "etc..."]
-      )
+        new WorkItem(
+            "ブロックチェーンの新規開発・運用（ブラウザゲーム）",
+            "サーバーサイド・フロントエンドでの開発、DBテーブルの設計、インフラの設計・構築",
+            ["GO言語", "TypeScript", "MySQL", "Git", "Docker", "Jenkins", "Zabbix", "Redash", "AWS", "CentOS"],
+            ["サーバーサイド及びクライアントアプリの基盤部分を開発", "シナリオエンジンの開発", "PvPバトルの開発", "etc..."]
+        )
     ]
 
     worksInTools: Array<WorkItem> = [

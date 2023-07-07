@@ -60,7 +60,7 @@ export default class Skills extends Vue {
         new SkillItem( "Java", 1 ),
         new SkillItem( "Swift", 1 ),
         new SkillItem( "Objective-C", 1 ),
-        new SkillItem( "Solidity", 2 ),
+        new SkillItem( "Solidity", 4 ),
     ]
     frameworks: Array<SkillItem> = [
         new SkillItem( ".NET Framework / Core", 5 ),
@@ -77,17 +77,19 @@ export default class Skills extends Vue {
     infras: Array<SkillItem> = [
         new SkillItem( "Apache", 4 ),
         new SkillItem( "nginx", 4 ),
-        new SkillItem( "Node.js", 3 ),
+        new SkillItem( "Node.js", 4 ),
         new SkillItem( "Docker", 4 ),
         new SkillItem( "Vagrant", 3 ),
         new SkillItem( "CentOS", 4 ),
         new SkillItem( "Ubuntu / Debian", 4 ),
-        new SkillItem( "AWS", 3 ),
+        new SkillItem( "AWS", 4 ),
+        new SkillItem( "GCP", 2 ),
     ]
     databases: Array<SkillItem> = [
         new SkillItem( "MySQL / MariaDB", 4 ),
         new SkillItem( "Mongo DB", 3 ),
         new SkillItem( "SQL Server", 2 ),
+        new SkillItem( "PostgreSQL", 2 ),
     ]
     devTools: Array<SkillItem> = [
         new SkillItem( "Visual Studio", 5 ),
@@ -100,7 +102,8 @@ export default class Skills extends Vue {
         new SkillItem( "Webpack", 3 ),
         new SkillItem( "CLIP STUDIO", 4 ),
         new SkillItem( "Photoshop", 1 ),
-        new SkillItem( "Hardhat", 2 ),
+        new SkillItem( "Hardhat", 4 ),
+        new SkillItem( "Terraform", 2 ),
     ]
 }
 </script>
