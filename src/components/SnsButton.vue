@@ -1,38 +1,38 @@
-<template>
-    <a v-if="isShowIcon == true" class="sns-button" :style="{ backgroundColor: bgColor }" :href="link" target="_blank">
-        <i :class="iconClass"></i> {{ buttonName }}
-    </a>
-    <a v-else class="sns-button" :style="{ backgroundColor: bgColor }" :href="link" target="_blank">
-        {{ buttonName }}
-    </a>
-</template>
+<script setup lang="ts">
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import {computed} from "vue";
 
-@Component
-export default class SnsButton extends Vue {
-    @Prop()
-    private buttonName!: string
-    @Prop()
-    private link!: string
-    @Prop( { default: true } )
-    private isShowIcon!: boolean
-    @Prop( { default: "b" } )
-    private iconType!: string
-    @Prop()
-    private iconName!: string
-    @Prop()
-    private bgColor!: string
-
-    get iconClass() {
-        return [
-            "fa" + this.iconType,
-            "fa-" + this.iconName
-        ]
-    }
+interface SnsButton {
+  buttonName: string
+  link: string
+  isShowIcon?: boolean
+  iconType?: string
+  iconName?: string
+  bgColor: string
 }
+
+const props = withDefaults(defineProps<SnsButton>(), {
+  isShowIcon: true,
+  iconType: 'b',
+  iconName: ''
+})
+
+const iconClass = computed(() => {
+  return [
+    "fa" + props.iconType,
+    "fa-" + props.iconName
+  ]
+})
 </script>
+
+<template>
+  <a v-if="isShowIcon" class="sns-button" :style="{ backgroundColor: bgColor }" :href="link" target="_blank">
+    <i :class="iconClass"></i> {{ buttonName }}
+  </a>
+  <a v-else class="sns-button" :style="{ backgroundColor: bgColor }" :href="link" target="_blank">
+    {{ buttonName }}
+  </a>
+</template>
 
 <style lang="scss" scoped>
 .sns-button {
@@ -41,6 +41,6 @@ export default class SnsButton extends Vue {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    color: white;
+    border: 1px solid gray;
 }
 </style>

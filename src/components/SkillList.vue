@@ -1,37 +1,31 @@
-<template>
-    <table class="skills-table">
-        <thead>
-            <tr>
-                <th>{{ name }}</th>
-                <th>スキル</th>
-            </tr>
-        </thead>
-        <tbody>
-            <skill-list-item v-for="( skillItem, index ) in skillItems" :key="index"
-                            :name="skillItem.name"
-                            :skill-grade="skillItem.skillGrade">
-            </skill-list-item>
-        </tbody>
-    </table>
-</template>
+<script setup lang="ts">
+import SkillListItem from "./SkillListItem.vue";
+import type {SkillItem} from "./SkillListItem.vue";
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import SkillListItem, { SkillItem } from './SkillListItem.vue';
-
-@Component({
-    components: {
-        SkillListItem
-    }
-})
-export default class SkillList extends Vue {
-    @Prop()
-    private name!: string
-
-    @Prop()
-    private skillItems!: Array<SkillItem>
+interface SkillList {
+  name: string
+  skillItems: SkillItem[]
 }
+
+defineProps<SkillList>()
 </script>
+
+<template>
+  <table class="skills-table">
+    <thead>
+    <tr>
+      <th>{{ name }}</th>
+      <th>スキル</th>
+    </tr>
+    </thead>
+    <tbody>
+    <skill-list-item v-for="( skillItem, index ) in skillItems" :key="index"
+                     :name="skillItem.name"
+                     :skill-grade="skillItem.skillGrade">
+    </skill-list-item>
+    </tbody>
+  </table>
+</template>
 
 <style lang="scss" scoped>
 

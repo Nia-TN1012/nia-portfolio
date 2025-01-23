@@ -1,38 +1,22 @@
-<template>
-    <tr>
-        <td>{{ name }}</td>
-        <td>{{ skillGradeStar }}</td>
-    </tr>
-</template>
+<script setup lang="ts">
+import {computed} from "vue";
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-
-export class SkillItem {
-    name: string
-    skillGrade: number
-
-    constructor( name: string, skillGrade: number ) {
-        this.name = name
-        this.skillGrade = skillGrade
-    }
+export interface SkillItem {
+  name: string
+  skillGrade: number
 }
 
-@Component
-export default class SkillListItem extends Vue {
-    @Prop()
-    private name!: string;
+const props = defineProps<SkillItem>();
 
-    @Prop()
-    private expYears!: number;
-
-    @Prop()
-    private skillGrade!: number;
-
-    get skillGradeStar() {
-        let adjustSkillGrade = Math.min( 5, Math.max( 1, this.skillGrade ) )
-        return "★".repeat( adjustSkillGrade ) + "☆".repeat( 5 - adjustSkillGrade )
-    }
-}
-
+const skillGradeStar = computed(() => {
+  let adjustSkillGrade = Math.min( 5, Math.max( 1, props.skillGrade ) )
+  return "★".repeat( adjustSkillGrade ) + "☆".repeat( 5 - adjustSkillGrade )
+})
 </script>
+
+<template>
+  <tr>
+    <td>{{ name }}</td>
+    <td>{{ skillGradeStar }}</td>
+  </tr>
+</template>

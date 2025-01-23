@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SnsButtonComponent from "../components/SnsButton.vue";
+</script>
+
 <template>
     <div class="about">
         <h2><i class="fas fa-address-card"></i> About</h2>
@@ -25,7 +29,7 @@
                             <th><i class="fas fa-landmark"></i> Speciality</th>
                             <td>
                                 フロントエンドやサーバーサイドでの開発、データベースの設計・チューニング、インフラ（AWSなどのクラウドを利用）の構成・運用 /
-                                ブロックチェーン技術周りの研究・開発
+                                ブロックチェーン技術周りの研究・コントラクト開発
                             </td>
                         </tr>
                         <tr>
@@ -36,13 +40,15 @@
                             <th><i class="fas fa-link"></i> SNS / Links</th>
                             <td>
                                 <div class="sns-buttons">
-                                    <sns-button icon-name="twitter" link="https://twitter.com/nia_tn1012" button-name="Twitter" bg-color="#00acee"></sns-button>
-                                    <sns-button icon-name="facebook" link="https://www.facebook.com/niatn1012" button-name="Facebook" bg-color="#3b5998"></sns-button>
-                                    <sns-button icon-name="github" link="https://github.com/Nia-TN1012" button-name="GitHub" bg-color="#24292e"></sns-button>
-                                    <sns-button icon-name="pen-fancy" icon-type="s" link="https://chronoir.net/" button-name="Blog" bg-color="#2464ff"></sns-button>
-                                    <sns-button is-show-icon="false" link="https://qiita.com/nia_tn1012" button-name="Qiita" bg-color="#55c500"></sns-button>
-                                    <sns-button icon-name="github" link="https://hub.docker.com/u/niatn1012/" button-name="Docker Hub" bg-color="#099cec"></sns-button>
-                                    <sns-button is-show-icon="false" link="https://www.nuget.org/profiles/nia_tn1012" button-name="NuGet Gallery" bg-color="#004880"></sns-button>
+                                    <sns-button-component icon-name="x-twitter" link="https://twitter.com/nia_tn1012" button-name="X (旧Twitter)" bg-color="#000000"></sns-button-component>
+                                    <sns-button-component icon-name="facebook" link="https://www.facebook.com/niatn1012" button-name="Facebook" bg-color="#3b5998"></sns-button-component>
+                                    <sns-button-component icon-name="instagram" link="https://www.instagram.com/nia_tn1012" button-name="Instagram" bg-color="#bb00ee"></sns-button-component>
+                                    <sns-button-component icon-name="github" link="https://github.com/Nia-TN1012" button-name="GitHub" bg-color="#24292e"></sns-button-component>
+                                    <sns-button-component icon-name="pen-fancy" icon-type="s" link="https://tech.nia-tn1012.com/" button-name="Blog (Tech)" bg-color="#2464ff"></sns-button-component>
+                                    <sns-button-component icon-name="pen-fancy" icon-type="s" link="https://blog.nia-tn1012.com/" button-name="Blog (Private)" bg-color="#00aaff"></sns-button-component>
+                                    <sns-button-component v-bind:is-show-icon="false" link="https://qiita.com/nia_tn1012" button-name="Qiita" bg-color="#55c500"></sns-button-component>
+                                    <sns-button-component icon-name="github" link="https://hub.docker.com/u/niatn1012/" button-name="Docker Hub" bg-color="#099cec"></sns-button-component>
+                                    <sns-button-component v-bind:is-show-icon="false" link="https://www.nuget.org/profiles/nia_tn1012" button-name="NuGet Gallery" bg-color="#004880"></sns-button-component>
                                 </div>
                             </td>
                         </tr>
@@ -55,7 +61,7 @@
             <img class="profile-balloon-chara" src="/img/Nia-sd-profile.png"/>
             <div class="profile-balloon-container">
                 <div class="profile-balloon-content">
-                    <p>こんにちはー！ 私は生まれも育ちも湘南のエンジニアです！ </p>
+                    <p>こんにちはー！ 私はs湘南出身、海老名在住のITエンジニアです！ </p>
                     <p>
                         新卒ではITのベンチャー企業に入社し、学生時代からC#やPHPを使ったプログラミングやアプリ開発をした経験を活かしつつ、
                         業務ではゲームのサーバーサイドやフロントエンドでの運用・開発に携わりました。<br/>
@@ -80,19 +86,6 @@
         <br/>
     </div>
 </template>
-
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import SnsButton from '@/components/SnsButton.vue';
-
-@Component({
-    components: {
-        SnsButton
-    }
-})
-export default class About extends Vue {
-}
-</script>
 
 <style lang="scss" scoped>
 $pcs: dark;
