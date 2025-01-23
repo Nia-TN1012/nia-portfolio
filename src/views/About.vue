@@ -28,13 +28,13 @@ import SnsButtonComponent from "../components/SnsButton.vue";
                         <tr>
                             <th><i class="fas fa-landmark"></i> Speciality</th>
                             <td>
-                                フロントエンドやサーバーサイドでの開発、データベースの設計・チューニング、インフラ（AWSなどのクラウドを利用）の構成・運用 /
+                                フロントエンドやサーバーサイドでの開発、データベースの設計・チューニング、インフラ（AWSやGCPなどのクラウドを利用）の構成・運用 /
                                 ブロックチェーン技術周りの研究・コントラクト開発
                             </td>
                         </tr>
                         <tr>
                             <th><i class="far fa-play-circle"></i> Hobby</th>
-                            <td>写真撮影、音ゲー</td>
+                            <td>写真撮影、音ゲー、料理</td>
                         </tr>
                         <tr>
                             <th><i class="fas fa-link"></i> SNS / Links</th>
