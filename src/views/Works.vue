@@ -56,7 +56,7 @@ const worksInTools: WorkItem[] = [
   },
   {
     title: "日報生成アプリの作成",
-    inCharge: "デスクトップアプリの作成",
+    inCharge: "デスクトップアプリの開発",
     technologyList: ["C#", ".NET Framework", "WPF"],
     workList: ["業務日報を作成しやすくするために、フォームに入力した内容から日報を生成するアプリを作成"]
   },
@@ -69,7 +69,7 @@ const worksInTools: WorkItem[] = [
     <p>ここでは、業務（学生時代の時も含む）での実績を紹介します。</p>
     <br/>
 
-    <h3><span>Webアプリ、Web3アプリ、ゲーム</span></h3>
+    <h3><span>Webアプリ、Web3アプリ、ネイティブアプリ</span></h3>
     <div class="wraplist">
       <work-list-item v-for="( item, index ) in worksInGames" :key="index"
                       :title="item.title"
