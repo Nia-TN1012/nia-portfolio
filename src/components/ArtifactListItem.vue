@@ -6,10 +6,10 @@ export interface ArtifactItem {
   imageName?: string;
   createDate: string;
   type: string;
-  technologyList: Array<string>;
-  appLinks?: Array<string>;
-  githubLinks?: Array<string>;
-  summaryList: Array<string>;
+  technologyList: string[];
+  appLinks?: string[];
+  githubLinks?: string[];
+  summaryList: string[];
 }
 
 const props = withDefaults(defineProps<ArtifactItem>(), {

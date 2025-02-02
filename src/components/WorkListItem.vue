@@ -4,8 +4,8 @@ import { computed } from "vue";
 export interface WorkItem {
   title: string;
   inCharge: string;
-  technologyList: Array<string>;
-  workList: Array<string>;
+  technologyList: string[];
+  workList: string[];
 }
 
 const props = defineProps<WorkItem>();
