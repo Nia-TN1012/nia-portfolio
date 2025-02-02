@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import {computed} from "vue";
+import { computed } from "vue";
 
 export interface WorkItem {
-  title: string
-  inCharge: string
-  technologyList: Array<string>
-  workList: Array<string>
+  title: string;
+  inCharge: string;
+  technologyList: Array<string>;
+  workList: Array<string>;
 }
 
-const props = defineProps<WorkItem>()
+const props = defineProps<WorkItem>();
 
 const technologies = computed(() => {
-  return props.technologyList.join( ", " );
-})
+  return props.technologyList.join(", ");
+});
 </script>
 
 <template>
@@ -25,7 +25,7 @@ const technologies = computed(() => {
       <p>{{ technologies }}</p>
       <h5>業務内容</h5>
       <ul>
-        <li v-for="( work, index ) in workList" :key="index">{{ work }}</li>
+        <li v-for="(work, index) in workList" :key="index">{{ work }}</li>
       </ul>
     </div>
   </div>

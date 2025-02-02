@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SkillList from '../components/SkillList.vue';
-import type { SkillItem } from '../components/SkillListItem.vue';
+import SkillList from "../components/SkillList.vue";
+import type { SkillItem } from "../components/SkillListItem.vue";
 
 const programingLangs: SkillItem[] = [
   {
@@ -55,11 +55,11 @@ const programingLangs: SkillItem[] = [
 
 const frameworks: SkillItem[] = [
   {
-    name:".NET Framework / Core",
+    name: ".NET Framework / Core",
     skillGrade: 5,
   },
   {
-    name:"WordPress",
+    name: "WordPress",
     skillGrade: 4,
   },
   {
@@ -110,7 +110,7 @@ const frameworks: SkillItem[] = [
     name: "Hardhat",
     skillGrade: 5,
   },
-]
+];
 
 const infras: SkillItem[] = [
   {
@@ -145,7 +145,7 @@ const infras: SkillItem[] = [
     name: "GCP",
     skillGrade: 3,
   },
-]
+];
 const databases: SkillItem[] = [
   {
     name: "MySQL / MariaDB",
@@ -163,7 +163,7 @@ const databases: SkillItem[] = [
     name: "PostgreSQL",
     skillGrade: 3,
   },
-]
+];
 const devTools: SkillItem[] = [
   {
     name: "Visual Studio",
@@ -205,13 +205,13 @@ const devTools: SkillItem[] = [
     name: "Photoshop",
     skillGrade: 2,
   },
-]
+];
 </script>
 
 <template>
   <div class="skills">
     <h2><i class="fas fa-laptop-code"></i> Skills</h2>
-    <br/>
+    <br />
     <div class="wraplist">
       <div class="cardbox">
         <h4 class="cardbox-header">プログラミング言語</h4>
@@ -222,7 +222,10 @@ const devTools: SkillItem[] = [
       <div class="cardbox">
         <h4 class="cardbox-header">フレームワーク</h4>
         <div class="cardbox-content">
-          <skill-list name="フレームワーク名" :skill-items="frameworks"></skill-list>
+          <skill-list
+            name="フレームワーク名"
+            :skill-items="frameworks"
+          ></skill-list>
         </div>
       </div>
       <div class="cardbox">
