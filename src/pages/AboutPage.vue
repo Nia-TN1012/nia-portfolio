@@ -15,10 +15,6 @@ import SnsButtonComponent from "../components/SnsButton.vue";
           <tbody>
             <tr>
               <th><i class="fas fa-signature"></i> Name</th>
-              <td>中曽根 智文（Tomofumi Nakasone）</td>
-            </tr>
-            <tr>
-              <th><i class="fas fa-signature"></i> (a.k.a.)</th>
               <td>智中 ニア（Nia Tomonaka）</td>
             </tr>
             <tr>
@@ -47,24 +43,6 @@ import SnsButtonComponent from "../components/SnsButton.vue";
                     bg-color="#000000"
                   ></sns-button-component>
                   <sns-button-component
-                    icon-name="facebook"
-                    link="https://www.facebook.com/niatn1012"
-                    button-name="Facebook"
-                    bg-color="#3b5998"
-                  ></sns-button-component>
-                  <sns-button-component
-                    icon-name="instagram"
-                    link="https://www.instagram.com/nia_tn1012"
-                    button-name="Instagram"
-                    bg-color="#bb00ee"
-                  ></sns-button-component>
-                  <sns-button-component
-                    icon-name="github"
-                    link="https://github.com/Nia-TN1012"
-                    button-name="GitHub"
-                    bg-color="#24292e"
-                  ></sns-button-component>
-                  <sns-button-component
                     icon-name="pen-fancy"
                     icon-type="s"
                     link="https://tech.nia-tn1012.com/"
@@ -77,24 +55,6 @@ import SnsButtonComponent from "../components/SnsButton.vue";
                     link="https://blog.nia-tn1012.com/"
                     button-name="Blog (Private)"
                     bg-color="#00aaff"
-                  ></sns-button-component>
-                  <sns-button-component
-                    v-bind:is-show-icon="false"
-                    link="https://qiita.com/nia_tn1012"
-                    button-name="Qiita"
-                    bg-color="#55c500"
-                  ></sns-button-component>
-                  <sns-button-component
-                    icon-name="github"
-                    link="https://hub.docker.com/u/niatn1012/"
-                    button-name="Docker Hub"
-                    bg-color="#099cec"
-                  ></sns-button-component>
-                  <sns-button-component
-                    v-bind:is-show-icon="false"
-                    link="https://www.nuget.org/profiles/nia_tn1012"
-                    button-name="NuGet Gallery"
-                    bg-color="#004880"
                   ></sns-button-component>
                 </div>
               </td>
@@ -116,7 +76,7 @@ import SnsButtonComponent from "../components/SnsButton.vue";
             2年目からは、データベースの設計・チューニングやインフラの運用にも携わり、キャリアとしてのフルスタックエンジニアを目指していました。
           </p>
           <p>
-            最近ではブロックチェーンに興味を持ったのと、1からシステムの開発に携わりたく思い、ブロックチェーンを使用したシステムの開発会社に転職しました。<br />
+            最近ではブロックチェーンに興味を持ったのと、1からシステムの開発に携わりたく思い、ブロックチェーン関連の開発会社に転職しました。<br />
             フルスタック＋ブロックチェーンエンジニアとして、研究や開発に精進していきます。<br />
           </p>
           <p>
