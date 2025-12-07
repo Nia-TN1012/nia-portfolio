@@ -68,7 +68,7 @@ import SnsButtonComponent from "../components/SnsButton.vue";
       <img class="profile-balloon-chara" src="/img/Nia-sd-profile.png" />
       <div class="profile-balloon-container">
         <div class="profile-balloon-content">
-          <p>こんにちはー！ 私はs湘南出身、海老名在住のITエンジニアです！</p>
+          <p>こんにちはー！ 私は湘南出身、海老名在住のITエンジニアです！</p>
           <p>
             新卒ではITのベンチャー企業に入社し、学生時代からC#やPHPを使ったプログラミングやアプリ開発をした経験を活かしつつ、
             業務ではゲームのサーバーサイドやフロントエンドでの運用・開発に携わりました。<br />
