@@ -78,24 +78,6 @@ import SnsButtonComponent from "../components/SnsButton.vue";
                     button-name="Blog (Private)"
                     bg-color="#00aaff"
                   ></sns-button-component>
-                  <sns-button-component
-                    v-bind:is-show-icon="false"
-                    link="https://qiita.com/nia_tn1012"
-                    button-name="Qiita"
-                    bg-color="#55c500"
-                  ></sns-button-component>
-                  <sns-button-component
-                    icon-name="github"
-                    link="https://hub.docker.com/u/niatn1012/"
-                    button-name="Docker Hub"
-                    bg-color="#099cec"
-                  ></sns-button-component>
-                  <sns-button-component
-                    v-bind:is-show-icon="false"
-                    link="https://www.nuget.org/profiles/nia_tn1012"
-                    button-name="NuGet Gallery"
-                    bg-color="#004880"
-                  ></sns-button-component>
                 </div>
               </td>
             </tr>
