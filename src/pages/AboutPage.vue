@@ -7,37 +7,37 @@ import SnsButtonComponent from "../components/SnsButton.vue";
     <h2><i class="fas fa-address-card"></i> About</h2>
     <br />
 
-    <h3><span>My Profile</span></h3>
+    <h3><span>プロフィール</span></h3>
     <div class="profile-card">
       <img class="profile-card-img" src="/img/Nia-profile.png" />
       <div class="profile-card-content">
         <table class="borderless-table">
           <tbody>
             <tr>
-              <th><i class="fas fa-signature"></i> Name</th>
+              <th><i class="fas fa-signature"></i> 名前</th>
               <td>中曽根 智文（Tomofumi Nakasone）</td>
             </tr>
             <tr>
-              <th><i class="fas fa-signature"></i> (a.k.a.)</th>
+              <th><i class="fas fa-signature"></i> (別名義)</th>
               <td>智中 ニア（Nia Tomonaka）</td>
             </tr>
             <tr>
-              <th><i class="fas fa-birthday-cake"></i> Birthday</th>
+              <th><i class="fas fa-birthday-cake"></i> 誕生日</th>
               <td>1992/10/12</td>
             </tr>
             <tr>
-              <th><i class="fas fa-landmark"></i> Speciality</th>
+              <th><i class="fas fa-landmark"></i> 職業</th>
               <td>
-                ITエンジニア（バックエンド、フロントエンド、データベース、インフラ（クラウド））、
-                ブロックチェーンエンジニア、プログラマー
+                フルスタックITエンジニア（バックエンド、フロントエンド、データベース、インフラ（クラウド））、
+                プログラマー、ブロックチェーンエンジニア
               </td>
             </tr>
             <tr>
-              <th><i class="far fa-play-circle"></i> Hobby</th>
+              <th><i class="far fa-play-circle"></i> 趣味</th>
               <td>写真撮影、旅行、料理、アニメ鑑賞</td>
             </tr>
             <tr>
-              <th><i class="fas fa-link"></i> SNS / Links</th>
+              <th><i class="fas fa-link"></i> SNS / リンク</th>
               <td>
                 <div class="sns-buttons">
                   <sns-button-component
@@ -95,18 +95,34 @@ import SnsButtonComponent from "../components/SnsButton.vue";
             新卒ではITのベンチャー企業に入社し、学生時代からC#やPHPを使ったプログラミングやアプリ開発をした経験を活かしつつ、
             業務ではゲームのサーバーサイドやフロントエンドでの運用・開発に携わりました。<br />
             運用をしているうちに、データベースやインフラも含めてゲームのシステム全体を見れるようにしたいと思い、
-            2年目からは、データベースの設計・チューニングやインフラの運用にも携わり、キャリアとしてのフルスタックエンジニアを目指していました。
+            2年目からは、データベースの設計やインフラの運用にも携わり、キャリアとしてのフルスタックエンジニアを目指していました。
           </p>
           <p>
-            最近ではブロックチェーンに興味を持ったのと、1からシステムの開発に携わりたく思い、ブロックチェーンを使用したシステムの開発会社に転職しました。<br />
-            フルスタック＋ブロックチェーンエンジニアとして、研究や開発に精進していきます。<br />
+            2019年頃にブロックチェーンに興味を持ったのと、1からシステムの開発に携わりたく思い、ブロックチェーンを使用したシステムの開発会社に転職し、<br />
+            コントラクトの開発やブロックチェーンと連携したシステム開発に7年ほど携わりました。<br />
+            最近では、フルスタックITエンジニアとして原点回帰し、AIを活用して、Webサービスやプロダクト開発に携わっています。
+          </p>
+          <p>
+            私がITエンジニアとして心がけていることは、以下のの2つです。<br />
+          </p>
+          <p>
+            <strong>[ユーザー・チームフレンドリーなプロダクト開発]</strong
+            ><br />
+            ユーザーからの要望に加えて、ユーザーが必要な機能や課題を推測・提案し、満足度の高いプロダクトの開発に貢献しています。<br />
+            また、チーム内での課題を発見して解決を提案したり、必要なものを推測して整備したりすることで、プロジェクトの円滑な遂行やプロダクトの開発効率の向上を実現しています。<br />
+            また開発中や運用において、担当領域を超えてシステム全体を意識した実装・調査・提案をすることで、開発効率の向上や問題の早期解決に貢献しています。
+          </p>
+          <p>
+            <strong>[技術の探究心と応用力]</strong><br />
+            業務で必要になる技術や新技術を独学・探究し、さらに業務で習得した経験と知識を組み合わせて応用することで、プロダクト開発に素早く貢献したり、技術選定の時に複数のプランを提案したりしています。<br />
+            またエンジニアチーム全体の技術力向上やエンジニア同士の繋がりの構築のために、IT勉強会を開催しています。
           </p>
           <p>
             趣味は写真撮影と音ゲーです。たまに非日常を求めて一人旅しています。<br />
             好きなものは、コーヒー、紅茶、シラス丼（湘南といえば、江ノ島のシラス丼！）
           </p>
           <p>
-            プロフィール画像のイラストは自分で描きました。TwitterなどのSNSのプロフィール画像で使うためです。
+            プロフィール画像のイラストは自分で描きました。X（旧Twitter）などのSNSのプロフィール画像で使うためです。
           </p>
           <p>よろしくお願いします！</p>
         </div>

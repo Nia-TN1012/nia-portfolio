@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
 const isShowNavbarMenu = ref(false);
 </script>
@@ -10,7 +10,10 @@ const isShowNavbarMenu = ref(false);
     <div id="navbar-toggle" v-on:click="isShowNavbarMenu = !isShowNavbarMenu">
       <a href="#"><i class="fas fa-bars"></i> Menu</a>
     </div>
-    <nav class="navbar-menu" :class="{ 'navbar-menu-active': isShowNavbarMenu }">
+    <nav
+      class="navbar-menu"
+      :class="{ 'navbar-menu-active': isShowNavbarMenu }"
+    >
       <router-link to="/" class="navbar-menu-item">
         <i class="fas fa-home"></i> Home
       </router-link>
@@ -30,10 +33,8 @@ const isShowNavbarMenu = ref(false);
   </div>
   <router-view />
 
-  <hr/>
-  <footer>
-    &copy;2025 Nia T.N. Tech Lab.
-  </footer>
+  <hr />
+  <footer>&copy;2026 Nia T.N. Tech Lab.</footer>
 </template>
 
 <style lang="scss">
@@ -45,7 +46,7 @@ $subHeaderColor: #00ddff;
 
 body {
   font-size: 1rem;
-  @media ( prefers-color-scheme: $pcs ) {
+  @media (prefers-color-scheme: $pcs) {
     background-color: #111;
   }
 }
@@ -56,7 +57,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 1rem;
   color: #111;
-  @media ( prefers-color-scheme: $pcs ) {
+  @media (prefers-color-scheme: $pcs) {
     color: white;
   }
 }
@@ -92,7 +93,7 @@ h4 {
   margin: 0 auto;
   padding: 0;
   background-color: #eee;
-  @media ( prefers-color-scheme: $pcs ) {
+  @media (prefers-color-scheme: $pcs) {
     background-color: #333;
     color: white;
   }
@@ -113,14 +114,14 @@ h4 {
 
       &:hover {
         background-color: #ddd;
-        @media ( prefers-color-scheme: $pcs ) {
+        @media (prefers-color-scheme: $pcs) {
           background-color: #444;
           color: #00ffff;
         }
       }
       &.router-link-exact-active {
         font-weight: bold;
-        @media ( prefers-color-scheme: $pcs ) {
+        @media (prefers-color-scheme: $pcs) {
           color: #00ccff;
         }
       }
@@ -134,7 +135,7 @@ h4 {
 }
 
 // スマホ用
-@media only screen and ( max-width: $mobileWidth ) {
+@media only screen and (max-width: $mobileWidth) {
   .navbar {
     .navbar-menu {
       display: none;
@@ -154,7 +155,7 @@ h4 {
     display: block;
     position: relative;
     background-color: #eee;
-    @media ( prefers-color-scheme: $pcs ) {
+    @media (prefers-color-scheme: $pcs) {
       background-color: #333;
     }
 
@@ -162,7 +163,7 @@ h4 {
       display: block;
       padding: 0.5em;
       color: inherit;
-      @media ( prefers-color-scheme: $pcs ) {
+      @media (prefers-color-scheme: $pcs) {
         color: white;
       }
       text-decoration: none;
@@ -172,9 +173,9 @@ h4 {
 
 .wraplist {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax( 480px, 1fr ) );
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   grid-auto-rows: 1fr;
-  @media only screen and ( max-width: $mobileWidth ) {
+  @media only screen and (max-width: $mobileWidth) {
     grid-template-columns: 100%;
   }
 }
@@ -185,7 +186,7 @@ h4 {
 
   background-color: #fff;
   border: 1px solid #888;
-  @media ( prefers-color-scheme: $pcs ) {
+  @media (prefers-color-scheme: $pcs) {
     background-color: #111;
   }
 

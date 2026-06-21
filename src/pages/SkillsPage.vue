@@ -2,6 +2,14 @@
 import SkillList from "../components/SkillList.vue";
 import type { SkillItem } from "../components/SkillListItem.vue";
 
+const expericences: string[] = [
+  "要件定義〜設計/実装〜運用改善までの一気通貫経験、バックエンド / フロントエンド / データベース / インフラを含むシステム全体の開発・運用経験",
+  "TypeScript / Nest.js / Next.js / C# / PHP / GO / Solidity などによるアプリケーション開発",
+  "Amazon Web Services / Google Cloud Platform / Terraform / AWS CDK / CI/CD / 監視（Zabbix、Makerel）・セキュリティ対策 / BI（Redash / Metabase）などの利用経験",
+  "プロジェクトの新規立ち上げ、運用経験",
+  "ブロックチェーンや暗号技術の知識（コントラクト開発など）",
+];
+
 const programingLangs: SkillItem[] = [
   {
     name: "C#",
@@ -84,11 +92,15 @@ const frameworks: SkillItem[] = [
   },
   {
     name: "React",
-    skillGrade: 3,
+    skillGrade: 4,
   },
   {
     name: "Nest.js",
     skillGrade: 4,
+  },
+  {
+    name: "Next.js",
+    skillGrade: 3,
   },
   {
     name: "Angular",
@@ -104,11 +116,15 @@ const frameworks: SkillItem[] = [
   },
   {
     name: "Terraform",
-    skillGrade: 3,
+    skillGrade: 4,
   },
   {
     name: "Hardhat",
     skillGrade: 5,
+  },
+  {
+    name: "Foundry",
+    skillGrade: 2,
   },
 ];
 
@@ -123,7 +139,7 @@ const infras: SkillItem[] = [
   },
   {
     name: "Docker",
-    skillGrade: 4,
+    skillGrade: 5,
   },
   {
     name: "Vagrant",
@@ -138,12 +154,12 @@ const infras: SkillItem[] = [
     skillGrade: 4,
   },
   {
-    name: "AWS",
+    name: "Amazon Web Services",
     skillGrade: 4,
   },
   {
-    name: "GCP",
-    skillGrade: 3,
+    name: "Google Cloud Platform",
+    skillGrade: 4,
   },
 ];
 const databases: SkillItem[] = [
@@ -171,6 +187,10 @@ const devTools: SkillItem[] = [
   },
   {
     name: "JetBrains IDE",
+    skillGrade: 5,
+  },
+  {
+    name: "Cursor",
     skillGrade: 5,
   },
   {
@@ -212,6 +232,14 @@ const devTools: SkillItem[] = [
   <div class="skills">
     <h2><i class="fas fa-laptop-code"></i> Skills</h2>
     <br />
+    <h3>活かせる経験・知識・技術</h3>
+    <ul>
+      <li v-for="(experience, index) in expericences" :key="index">
+        {{ experience }}
+      </li>
+    </ul>
+    <br />
+    <h3>テクニカルスキル</h3>
     <div class="wraplist">
       <div class="cardbox">
         <h4 class="cardbox-header">プログラミング言語</h4>
